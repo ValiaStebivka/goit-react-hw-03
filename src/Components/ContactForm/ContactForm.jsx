@@ -10,7 +10,7 @@ export const ContactForm = ({ onAdd }) => {
       .max(50, "Too Long! (max. 50 symbols)")
       .required("Required field"),
     number: Yup.string()
-      .min(5, "Must be at least 5 sybmols long")
+      .min(3, "Must be at least 3 sybmols long")
       .max(12, "Too Long! (max. 12 symbols)")
       .required("Required field"),
   });
@@ -48,7 +48,7 @@ export const ContactForm = ({ onAdd }) => {
           </label>
           <Field
             className={css.input}
-            type="number"
+            type="text"
             name="number"
             id="contactnumber"
             autoComplete="tel"
